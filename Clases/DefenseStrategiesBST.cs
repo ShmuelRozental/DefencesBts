@@ -15,6 +15,8 @@ namespace Week_10
             Root = InsertRec(Root, minSeverity, maxSeverity, defenses);
         }
 
+
+        //O(log n)
         private BSTNode InsertRec(BSTNode root, int minSeverity, int maxSeverity, List<string> defenses)
         {
             if (root == null)
@@ -34,6 +36,7 @@ namespace Week_10
             return root;
         }
 
+        //O(n)
         public void PreOrderTraversal(BSTNode node)
         {
             if (node != null)
@@ -49,6 +52,8 @@ namespace Week_10
             return SearchRec(Root, severity);
         }
 
+
+        //O(log n)
         private BSTNode SearchRec(BSTNode root, int severity)
         {
             if (root == null || (severity >= root.MinSeverity && severity <= root.MaxSeverity))
@@ -69,7 +74,7 @@ namespace Week_10
             return Min(Root);
         }
 
-
+        //O(h)
         private int Min(BSTNode node)
         {
             while (node.Left != null)

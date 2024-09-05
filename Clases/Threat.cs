@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Week_10.Program;
+using static Week_10.Services.JsonService;
 
 namespace Week_10
 {

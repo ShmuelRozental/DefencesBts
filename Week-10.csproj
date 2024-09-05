@@ -72,13 +72,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BSTNode.cs" />
+    <Compile Include="Clases\BSTNode.cs" />
     <Compile Include="Clases\DefenseStrategy.cs" />
-    <Compile Include="DefenseStrategiesBST.cs" />
+    <Compile Include="Clases\DefenseStrategiesBST.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services.cs" />
-    <Compile Include="TargetType.cs" />
+    <Compile Include="Services\JsonService.cs" />
+    <Compile Include="Services\DefenseServices.cs" />
+    <Compile Include="Enums\TargetType.cs" />
     <Compile Include="Clases\Threat.cs" />
   </ItemGroup>
   <ItemGroup>
