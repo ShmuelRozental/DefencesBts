@@ -59,6 +59,25 @@ namespace Week_10
 
             return SearchRec(root.Right, severity);
         }
+
+        public int Min()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("The tree is empty.");
+            }
+            return Min(Root);
+        }
+
+
+        private int Min(BSTNode node)
+        {
+            while (node.Left != null)
+            {
+                node = node.Left;
+            }
+            return node.MinSeverity;
+        }
     }
 
 }
